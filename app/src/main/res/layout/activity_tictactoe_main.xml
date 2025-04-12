@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tictactoe_Main">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="451dp"
+        android:layout_height="887dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tictac_choice_min" />
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bangers"
+        android:text="  Choose Krle\nKonsa Khelega"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Versus Computer Button -->
+
+    <!-- Text "Or" -->
+
+    <!-- Two Player Button -->
+
+    <ImageButton
+        android:id="@+id/versus_bot"
+        android:layout_width="152dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginBottom="25dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="versus_bot"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/text4_or"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/versus_computer" />
+
+    <TextView
+        android:id="@+id/text4_or"
+        android:layout_width="51dp"
+        android:layout_height="79dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/bangers"
+        android:text=" Or\n "
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/versus_twoplayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/versus_bot" />
+
+    <ImageButton
+        android:id="@+id/versus_twoplayer"
+        android:layout_width="140dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginBottom="94dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="versus_twoplayer"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/versus_bot"
+        app:layout_constraintVertical_bias="0.267"
+        app:srcCompat="@drawable/versus_twoplayer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
