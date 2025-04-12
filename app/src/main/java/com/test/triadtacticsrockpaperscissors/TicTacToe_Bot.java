@@ -24,3 +24,5 @@ public class TicTacToe_Bot extends AppCompatActivity {
     }
 
 }
+///work remaining still
+// layout and buttons needeed to be binded together

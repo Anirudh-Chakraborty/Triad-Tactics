@@ -38,6 +38,6 @@ public class tictactoe_two_player_main extends AppCompatActivity {
             return insets;
         });
     }
-
+//almost done half reamins
 
 }
